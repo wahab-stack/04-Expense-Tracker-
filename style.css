@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container Styles */
+  .container {
+    background-color: #1e1e1e; /* Dark container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(106, 102, 102, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bb86fc; /* Purple accent */
+    font-size: 2rem;
+  }
+  
+  h2 {
+    margin: 25px 0 15px;
+    color: #bb86fc; /* Purple accent */
+    font-size: 1.5rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+  }
+  
+  /* Form Styles */
+  #expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #bb86fc;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9a67cc;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Expense List Styles */
+  #expense-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  #expense-list li {
+    background-color: #2d2d2d;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  
+  #expense-list li:hover {
+    transform: translateX(5px);
+  }
+  
+  /* Total Amount Styles */
+  #total {
+    margin-top: 25px;
+    text-align: right;
+  }
+  
+  #total h3 {
+    color: #bb86fc;
+    font-size: 1.3rem;
+  }
+  
+  #total-amount {
+    font-weight: bold;
+    color: #e0e0e0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
